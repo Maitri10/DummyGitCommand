@@ -1,0 +1,13 @@
+database:
+  driverClass: org.h2.Driver
+  user: admin
+  password: admin
+  url: jdbc:h2:tcp://localhost/~/test_db
+  properties:
+    hibernate.dialect: org.hibernate.dialect.H2Dialect
+    hibernate.hbm2ddl.auto: update
+    charSet: UTF-8
+server:
+  applicationConnectors:
+    - type: http
+      port: 8089
